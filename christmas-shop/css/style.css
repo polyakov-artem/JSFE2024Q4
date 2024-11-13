@@ -338,6 +338,7 @@ body {
 .unleash__caption {
   margin-top: 0;
   margin-bottom: 20px;
+  color: var(--primary-color);
 }
 
 .unleash__heading {
