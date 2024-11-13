@@ -302,6 +302,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--static-white-color);
 }
 
 .explore__caption {
@@ -337,10 +338,6 @@ body {
 .unleash__caption {
   margin-top: 0;
   margin-bottom: 20px;
-}
-
-.caption-text {
-  color: var(--primary-color);
 }
 
 .unleash__heading {
