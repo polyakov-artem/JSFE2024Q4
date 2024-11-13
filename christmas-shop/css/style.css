@@ -320,7 +320,6 @@ body {
 
 .hero {
   border-radius: 20px 20px 0px 0px;
-
   background: url(./../assets/img/bg-ball.png) no-repeat center / cover,
     url(./../assets/img/bg-snow.png) no-repeat center / cover, var(--primary-color);
 }
@@ -329,4 +328,66 @@ body {
 }
 
 .hero__explore {
+}
+
+.unleash {
+  padding: 60px 0;
+}
+
+.unleash__caption {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.caption-text {
+  color: var(--primary-color);
+}
+
+.unleash__heading {
+  margin-bottom: 20px;
+}
+
+.unleash__text {
+  margin-bottom: 0;
+}
+
+.banner {
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--static-white-color);
+  display: flex;
+}
+
+.banner__section {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.banner__content-section {
+  padding: 100px 60px;
+}
+
+.banner__unleash {
+  max-width: 426px;
+}
+
+.banner__img-section {
+}
+
+.banner__img {
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about {
+  background: url(./../assets/img/bg-snow.png) no-repeat center / cover, var(--primary-color);
+}
+
+.about__container {
+}
+
+.about_banner {
 }
