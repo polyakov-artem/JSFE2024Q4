@@ -740,6 +740,13 @@ body {
   margin: 0 0 15px;
 }
 
-.footer__caption {
+.footer__rs-link {
   margin: 0;
+  text-decoration: none;
+  transition: 0.2s color;
+  color: var(--dark-color);
+}
+
+.footer__rs-link:hover {
+  color: var(--primary-color);
 }
