@@ -163,22 +163,23 @@ body {
 }
 
 .btn_view_outline {
-  --btn-outline-color: var(--static-white-color);
-  --btn-outline-bg-color: transparent;
-  --btn-outline-border-color: var(--btn-outline-color);
+  --btn-color: var(--static-white-color);
+  --btn-bg-color: transparent;
+  --btn-border-color: var(--btn-color);
 
-  --btn-outline-hover-color: var(--primary-color);
-  --btn-outline-hover-bg-color: var(--static-white-color);
-  --btn-outline-hover-border-color: var(--btn-outline-hover-bg-color);
+  --btn-hover-color: var(--primary-color);
+  --btn-hover-bg-color: var(--btn-color);
+  --btn-hover-border-color: var(--btn-color);
 
-  --btn-outline-active-bg-color: var(--btn-outline-hover-bg-color);
-  --btn-outline-active-border-color: var(--btn-outline-hover-border-color);
+  --btn-active-bg-color: var(--btn-hover-bg-color);
+  --btn-active-border-color: var(--btn-hover-border-color);
 
-  --btn-outline-disabled-bg-color: var(--static-white-40-color);
-  --btn-outline-disabled-border-color: var(--btn-outline-disabled-bg-color);
+  --btn-focus-box-shadow: 0 0 0 4px var(--static-white-40-color);
+  --btn-focus-color: var(--btn-hover-color);
 
-  --btn-outline-focus-box-shadow: 0 0 0 4px var(--static-white-40-color);
-  --btn-outline-focus-color: var(--btn-outline-hover-color);
+  --btn-disabled-color: var(--static-white-40-color);
+  --btn-disabled-bg-color: transparent;
+  --btn-disabled-border-color: var(--btn-disabled-color);
 }
 
 .btn_view_outline {
@@ -186,52 +187,53 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 15px;
-  color: var(--btn-outline-color);
-  border: 1px solid var(--btn-outline-border-color);
+  color: var(--btn-color);
+  border: 1px solid var(--btn-border-color);
   border-radius: 20px;
-  background-color: var(--btn-outline-bg-color);
+  background-color: var(--btn-bg-color);
 }
 
 .btn_view_outline:focus-visible {
-  background-color: var(--btn-outline-hover-bg-color);
-  border-color: var(--btn-outline-hover-border-color);
-  box-shadow: var(--btn-outline-focus-box-shadow);
-  color: var(--btn-outline-focus-color);
+  background-color: var(--btn-hover-bg-color);
+  border-color: var(--btn-hover-border-color);
+  box-shadow: var(--btn-focus-box-shadow);
+  color: var(--btn-focus-color);
 }
 
 .btn_view_outline:hover {
-  background-color: var(--btn-outline-hover-bg-color);
-  border-color: var(--btn-outline-hover-border-color);
-  color: var(--btn-outline-hover-color);
+  background-color: var(--btn-hover-bg-color);
+  border-color: var(--btn-hover-border-color);
+  color: var(--btn-hover-color);
 }
 
 .btn_view_outline:active {
-  background-color: var(--btn-outline-active-bg-color);
-  border-color: var(--btn-outline-active-border-color);
+  background-color: var(--btn-active-bg-color);
+  border-color: var(--btn-active-border-color);
 }
 
 .btn_view_outline:disabled {
-  background-color: var(--btn-outline-disabled-bg-color);
-  border-color: var(--btn-outline-disabled-border-color);
+  color: var(--btn-disabled-color);
+  background-color: var(--btn-disabled-bg-color);
+  border-color: var(--btn-disabled-border-color);
 }
 
 .btn_view_primary {
-  --btn-primary-color: var(--static-white-color);
-  --btn-primary-bg-color: var(--dark-color);
-  --btn-primary-border-color: var(--btn-primary-bg-color);
+  --btn-color: var(--static-white-color);
+  --btn-bg-color: var(--dark-color);
+  --btn-border-color: var(--btn-bg-color);
 
-  --btn-primary-hover-color: var(--dark-color);
-  --btn-primary-hover-bg-color: var(--static-white-color);
-  --btn-primary-hover-border-color: var(--btn-primary-hover-bg-color);
+  --btn-hover-color: var(--dark-color);
+  --btn-hover-bg-color: var(--static-white-color);
+  --btn-hover-border-color: var(--btn-hover-bg-color);
 
-  --btn-primary-active-bg-color: var(--btn-primary-hover-bg-color);
-  --btn-primary-active-border-color: var(--btn-primary-hover-border-color);
+  --btn-active-bg-color: var(--btn-hover-bg-color);
+  --btn-active-border-color: var(--btn-hover-border-color);
 
-  --btn-primary-disabled-bg-color: var(--gray-color);
-  --btn-primary-disabled-border-color: var(--gray-color);
+  --btn-focus-box-shadow: 0 0 0 4px var(--static-white-40-color);
+  --btn-focus-color: var(--btn-hover-color);
 
-  --btn-primary-focus-box-shadow: 0 0 0 4px var(--static-white-40-color);
-  --btn-primary-focus-color: var(--btn-primary-hover-color);
+  --btn-disabled-bg-color: var(--gray-color);
+  --btn-disabled-border-color: var(--gray-color);
 }
 
 .btn_view_primary {
@@ -239,33 +241,33 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 20px 32px;
-  color: var(--btn-primary-color);
-  border: 1px solid var(--btn-primary-border-color);
+  color: var(--btn-color);
+  border: 1px solid var(--btn-border-color);
   border-radius: 20px;
-  background-color: var(--btn-primary-bg-color);
+  background-color: var(--btn-bg-color);
 }
 
 .btn_view_primary:focus-visible {
-  background-color: var(--btn-primary-hover-bg-color);
-  border-color: var(--btn-primary-hover-border-color);
-  box-shadow: var(--btn-primary-focus-box-shadow);
-  color: var(--btn-primary-focus-color);
+  background-color: var(--btn-hover-bg-color);
+  border-color: var(--btn-hover-border-color);
+  box-shadow: var(--btn-focus-box-shadow);
+  color: var(--btn-focus-color);
 }
 
 .btn_view_primary:hover {
-  background-color: var(--btn-primary-hover-bg-color);
-  border-color: var(--btn-primary-hover-border-color);
-  color: var(--btn-primary-hover-color);
+  background-color: var(--btn-hover-bg-color);
+  border-color: var(--btn-hover-border-color);
+  color: var(--btn-hover-color);
 }
 
 .btn_view_primary:active {
-  background-color: var(--btn-primary-active-bg-color);
-  border-color: var(--btn-primary-active-border-color);
+  background-color: var(--btn-active-bg-color);
+  border-color: var(--btn-active-border-color);
 }
 
 .btn_view_primary:disabled {
-  background-color: var(--btn-primary-disabled-bg-color);
-  border-color: var(--btn-primary-disabled-border-color);
+  background-color: var(--btn-disabled-bg-color);
+  border-color: var(--btn-disabled-border-color);
 }
 
 .page {
