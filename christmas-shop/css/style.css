@@ -654,3 +654,92 @@ body {
 .cta-section__wrap {
   padding: 60px 0;
 }
+
+.contact {
+  border-radius: 20px;
+  background: var(--content-bg-color);
+  text-decoration: none !important;
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: 0.2s color;
+}
+
+.contact__img {
+  margin-bottom: 13px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.contact__link {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.contact__title {
+  margin: 0;
+}
+
+.contact:hover {
+  color: var(--primary-color);
+}
+
+.footer__socials {
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socials_item {
+}
+
+.socials_link {
+  color: var(--dark-color);
+  display: flex;
+  padding: 8px;
+  transition: 0.2s color;
+}
+
+.socials_link:hover {
+  color: var(--primary-color);
+}
+
+.socials_icon {
+}
+
+.footer {
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  align-self: stretch;
+  margin-bottom: 58px;
+}
+
+.footer__socials {
+  margin-bottom: 10px;
+}
+
+.footer__rights {
+  margin: 0 0 15px;
+}
+
+.footer__caption {
+  margin: 0;
+}
