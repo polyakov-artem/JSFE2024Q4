@@ -399,6 +399,18 @@ body {
   margin-bottom: 14px;
 }
 
+.explore_secondary .explore__heading {
+  padding: 0 0 22px;
+}
+
+.explore_secondary .explore__button {
+  margin-bottom: 20px;
+}
+
+.explore_secondary .explore__caption {
+  margin-bottom: 10px;
+}
+
 .hero {
   border-radius: 20px 20px 0px 0px;
   background: url(./../assets/img/bg-ball.png) no-repeat center / cover,
@@ -609,4 +621,36 @@ body {
 .gifts-section {
   background: url(./../assets/img/bg-snow.png) no-repeat center / cover, var(--primary-color);
   color: var(--static-white-color);
+}
+
+.timer {
+  border-radius: 20px;
+  background: var(--static-white-40-color);
+  padding: 8px 12px 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.timer__part {
+}
+
+.timer__number {
+  margin: 0;
+  position: relative;
+}
+
+.timer__unit {
+  margin: 0;
+  min-width: 80px;
+}
+
+.cta-section {
+  color: var(--static-white-color);
+  background: url(./../assets/img/bg-snow.png) no-repeat center / cover,
+    url(./../assets/img/bg-snow.png) no-repeat center / cover, var(--primary-color);
+  color: var(--static-white-color);
+}
+
+.cta-section__wrap {
+  padding: 60px 0;
 }
