@@ -727,8 +727,9 @@ body {
 .cta-section {
   color: var(--static-white-color);
   background: url(./../assets/img/bg-snow.png) no-repeat center / cover,
-    url(./../assets/img/bg-snow.png) no-repeat center / cover, var(--primary-color);
+    url(./../assets/img/bg-forest.png) no-repeat center / cover, var(--primary-color);
   color: var(--static-white-color);
+  border-radius: 0px 0px 20px 20px;
 }
 
 .cta-section__wrap {
