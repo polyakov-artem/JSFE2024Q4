@@ -708,6 +708,17 @@ body {
   position: relative;
 }
 
+.timer__part:not(:last-child) .timer__number:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background-color: var(--static-white-40-color);
+}
+
 .timer__unit {
   margin: 0;
   min-width: 80px;
