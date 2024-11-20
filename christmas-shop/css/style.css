@@ -20,6 +20,7 @@
 
   --page-min-width: 380px;
   --page-max-width: 1440px;
+  --container-max-width-lg: 1294px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -334,10 +335,12 @@ body {
 .page {
   margin: 0 auto;
   max-width: var(--page-max-width);
+  overflow: hidden;
+  position: relative;
 }
 
 .container {
-  max-width: 1294px;
+  max-width: var(--container-max-width-lg);
   margin: 0 auto;
   padding: 0 8px;
 }
