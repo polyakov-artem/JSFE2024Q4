@@ -918,6 +918,13 @@ body {
   margin: 0 0 22px;
 }
 
+@media (max-width: 1060px) {
+  .footer__contacts-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .header__panel {
     z-index: 20;
