@@ -953,3 +953,17 @@ body {
     display: block;
   }
 }
+
+@media (max-width: 650px) {
+  .banner {
+    display: block;
+  }
+
+  .banner__section {
+    max-width: none;
+  }
+
+  .banner__content-section {
+    padding: 0px 20px;
+  }
+}
