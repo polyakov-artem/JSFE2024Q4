@@ -465,13 +465,16 @@ body {
   transition-property: color, background-color;
 }
 
-.header__link:hover,
-.header__link_active {
-  color: var(--primary-color);
-  background-color: var(--primary-10-color);
+@media (hover: hover) {
+  .header__link:hover {
+    color: var(--primary-color);
+    background-color: var(--primary-10-color);
+  }
 }
 
 .header__link_active {
+  color: var(--primary-color);
+  background-color: var(--primary-10-color);
   pointer-events: none;
   cursor: default;
 }
@@ -748,8 +751,10 @@ body {
   cursor: pointer;
 }
 
-.gift_view_link:hover .gift__title {
-  color: var(--primary-color);
+@media (hover: hover) {
+  .gift_view_link:hover .gift__title {
+    color: var(--primary-color);
+  }
 }
 
 .gifts-section {
@@ -829,8 +834,10 @@ body {
   margin: 0;
 }
 
-.contact:hover {
-  color: var(--primary-color);
+@media (hover: hove) {
+  .contact:hover {
+    color: var(--primary-color);
+  }
 }
 
 .footer__socials {
@@ -854,8 +861,10 @@ body {
   transition: 0.2s color;
 }
 
-.socials_link:hover {
-  color: var(--primary-color);
+@media (hover: hover) {
+  .socials_link:hover {
+    color: var(--primary-color);
+  }
 }
 
 .socials_icon {
@@ -893,8 +902,10 @@ body {
   color: var(--dark-color);
 }
 
-.footer__rs-link:hover {
-  color: var(--primary-color);
+@media (hover: hover) {
+  .footer__rs-link:hover {
+    color: var(--primary-color);
+  }
 }
 
 .tabs {
