@@ -574,14 +574,17 @@ body {
 }
 
 .banner__content-section {
-  padding: 100px 60px;
+  padding: 0 60px;
+  display: flex;
 }
 
 .banner__unleash {
   max-width: 426px;
+  margin: auto 0;
 }
 
 .banner__img-section {
+  height: 528px;
 }
 
 .banner__img {
