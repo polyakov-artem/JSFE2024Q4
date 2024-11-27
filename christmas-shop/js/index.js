@@ -1,4 +1,9 @@
+import { CLASS_HEADER, Header } from './header.js';
 import './score.js';
-import { showScore } from './score.js';
+import { getSelector } from './utils.js';
 
-showScore(2);
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll(getSelector(CLASS_HEADER)).forEach((element) => {
+    new Header(element);
+  });
+});
