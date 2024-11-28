@@ -926,9 +926,11 @@ body {
 }
 
 .tabs-content__tab {
+  display: none;
 }
 
-.tabs-content__tab_active {
+.tabs-content__tab_selected {
+  display: block;
 }
 
 .gifts-gallery {
