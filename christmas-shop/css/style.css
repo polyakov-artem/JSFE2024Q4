@@ -1145,7 +1145,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 2.5rem;
+  padding: 20px 8px;
   pointer-events: none;
 }
 
