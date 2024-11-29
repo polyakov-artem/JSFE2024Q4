@@ -175,6 +175,21 @@ body {
   background: url(./../assets/img/close.svg) no-repeat center center;
 }
 
+.up-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  background: url(./../assets/img/arrow-up.svg) no-repeat center, var(--static-white-color);
+}
+
+.up-btn_hidden {
+  display: none;
+}
+
 .btn_view_outline {
   --btn-color: var(--static-white-color);
   --btn-bg-color: transparent;

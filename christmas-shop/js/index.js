@@ -7,9 +7,11 @@ import { getRandomInt, getSelector } from './utils.js';
 import { gifts } from './../data/gifts.js';
 import { CLASS_TABS, CLASS_TABS_CONTENT, TAB_ATTRIBUTE, TABS } from './tabs.js';
 import { Modal } from './modal.js';
+import UpBtn from '../components/up-btn/up-btn.js';
 
 const CLASS_BEST_GIFTS = 'gifts-section';
 const CLASS_GIFTS_GRID = 'gifts-grid';
+const CLASS_GIFTS_PAGE = 'gifts-page';
 
 const handleGiftClick = (gift, modalInstance) => {
   if (!modalInstance) return;
@@ -62,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll(getSelector(CLASS_TABS)).forEach((element) => {
     new TABS(element);
+  });
+
+  document.querySelectorAll(getSelector(CLASS_GIFTS_PAGE)).forEach(() => {
+    new UpBtn().addToPage();
   });
 
   document.querySelectorAll(getSelector(CLASS_TABS)).forEach((element) => {
