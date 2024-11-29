@@ -11,6 +11,14 @@ import { Modal } from './modal.js';
 const CLASS_BEST_GIFTS = 'gifts-section';
 const CLASS_GIFTS_GRID = 'gifts-grid';
 
+const handleGiftClick = (gift, modalInstance) => {
+  if (!modalInstance) return;
+  const { modalWindowContent } = modalInstance;
+
+  modalWindowContent.innerHTML = '';
+  modalWindowContent.appendChild(Gift(gift));
+};
+
 document.addEventListener('DOMContentLoaded', () => {
   const modalInstance = new Modal();
 
@@ -38,7 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const grid = element.querySelector(getSelector(CLASS_GIFTS_GRID));
 
-    randomGifts.forEach((gift) => grid.appendChild(Gift({ ...gift, view: 'link' })));
+    randomGifts.forEach((gift) =>
+      grid.appendChild(
+        Gift({
+          name: gift.name,
+          category: gift.category,
+          view: 'link',
+          onClick: () => {
+            handleGiftClick(gift, modalInstance);
+          },
+        }),
+      ),
+    );
   });
 
   document.querySelectorAll(getSelector(CLASS_TABS)).forEach((element) => {
@@ -71,7 +90,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       giftsToAdd
-        .map((gift) => Gift({ ...gift, view: 'link' }))
+        .map((gift) =>
+          Gift({
+            name: gift.name,
+            category: gift.category,
+            view: 'link',
+            onClick: () => {
+              handleGiftClick(gift, modalInstance);
+            },
+          }),
+        )
         .forEach((gift) => tabsGrid.appendChild(gift));
     });
   });
