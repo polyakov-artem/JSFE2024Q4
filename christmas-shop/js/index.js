@@ -8,6 +8,7 @@ import { gifts } from './../data/gifts.js';
 import { CLASS_TABS, CLASS_TABS_CONTENT, TAB_ATTRIBUTE, TABS } from './tabs.js';
 import { Modal } from './modal.js';
 import UpBtn from '../components/up-btn/up-btn.js';
+import { showScore } from './score.js';
 
 const CLASS_BEST_GIFTS = 'gifts-section';
 const CLASS_GIFTS_GRID = 'gifts-grid';
@@ -20,6 +21,8 @@ const handleGiftClick = (gift, modalInstance) => {
   modalWindowContent.innerHTML = '';
   modalWindowContent.appendChild(Gift(gift));
 };
+
+showScore(3);
 
 document.addEventListener('DOMContentLoaded', () => {
   const modalInstance = new Modal();
