@@ -6,11 +6,14 @@ import { CLASS_TIMER, TIMER } from './timer.js';
 import { getRandomInt, getSelector } from './utils.js';
 import { gifts } from './../data/gifts.js';
 import { CLASS_TABS, CLASS_TABS_CONTENT, TAB_ATTRIBUTE, TABS } from './tabs.js';
+import { Modal } from './modal.js';
 
 const CLASS_BEST_GIFTS = 'gifts-section';
 const CLASS_GIFTS_GRID = 'gifts-grid';
 
 document.addEventListener('DOMContentLoaded', () => {
+  const modalInstance = new Modal();
+
   document.querySelectorAll(getSelector(CLASS_HEADER)).forEach((element) => {
     new Header(element);
   });
