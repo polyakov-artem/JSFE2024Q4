@@ -907,7 +907,7 @@ body {
   margin: 0;
 }
 
-@media (hover: hove) {
+@media (hover: hover) {
   .contact:hover {
     color: var(--primary-color);
   }
