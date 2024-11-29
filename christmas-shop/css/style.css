@@ -169,6 +169,12 @@ body {
   flex: none;
 }
 
+.close-btn {
+  width: 40px;
+  height: 40px;
+  background: url(./../assets/img/close.svg) no-repeat center center;
+}
+
 .btn_view_outline {
   --btn-color: var(--static-white-color);
   --btn-bg-color: transparent;
@@ -678,6 +684,22 @@ body {
 }
 
 .slider-section__slider {
+}
+
+.rating {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.rating__unit {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  opacity: 0.1;
+}
+
+.rating__unit_active {
+  opacity: 1;
 }
 
 .gifts-grid {
